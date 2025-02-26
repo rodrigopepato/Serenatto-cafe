@@ -1,0 +1,33 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configuração do ambiente de desenvolvimento
+.env
+.env.local
+*.log
+error_log
+
+# Dependências do Composer
+/vendor/
+/composer.lock
+
+# Cache e arquivos temporários
+/node_modules/
+/tmp/
+/cache/
+/*.cache
+
+# Configuração do banco de dados
+*.sql
+/database/database.sqlite
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos gerados pelo servidor PHP
+*.session
+*.pid
