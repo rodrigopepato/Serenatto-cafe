@@ -8,6 +8,7 @@ class Product
 
     public function __construct(
         private string $nome,
+        private readonly string $categoria,
         private string $descricao,
         private string $preco
     ) {}
@@ -20,6 +21,11 @@ class Product
     public function getNome(): string
     {
         return $this->nome;
+    }
+
+    public function getCategoria(): string
+    {
+        return $this->categoria;
     }
 
     public function getDescricao(): string
