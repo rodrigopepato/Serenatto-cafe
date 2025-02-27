@@ -5,6 +5,7 @@ namespace App\Entity;
 class Product
 {
     private ?int $id = null;
+    private ?string $filePath;
 
     public function __construct(
         private string $nome,
@@ -38,6 +39,11 @@ class Product
         return number_format((float) $this->preco, 2, '.', '');
     }
 
+    public function getfilePath(): ?string
+    {
+        return $this->filePath;
+    }
+
     public function setId(int $id): void
     {
         $this->id = $id;
@@ -51,6 +57,11 @@ class Product
     public function setDescricao(string $descricao): void
     {
         $this->descricao = $descricao;
+    }
+
+    public function setfilePath($filePath): void
+    {
+        $this->filePath = $filePath;
     }
 
     public function setPreco(string $preco): void
