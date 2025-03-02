@@ -1,5 +1,9 @@
 <?php
+
+use App\Entity\Product;
+
     require_once __DIR__ . '/inicio.php';
+    /** @var Product[] $productList */
 ?>
 
 <main>
